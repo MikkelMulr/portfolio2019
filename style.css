@@ -485,6 +485,7 @@ body {
 	padding: 0.4rem;
 	background-color: #2a2a2a;
 	outline: none;
+	color: #fff;
 }
 
 .Form-input-text {
@@ -497,6 +498,7 @@ body {
 	padding: 0.4rem;
 	background-color: #2a2a2a;
 	outline: none;
+	color: #fff;
 }
 
 .Form-btn {
