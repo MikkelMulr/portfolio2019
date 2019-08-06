@@ -231,6 +231,46 @@ body {
 	margin-top: 3vh;
 }
 
+.Home-main-icons {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+
+.Home-main-icon {
+	height: 4rem;
+	width: 4rem;
+	background: #fff;
+	border-radius: 50%;
+	margin: 0 2rem;
+}
+
+.Home-main-icons .icon1 {
+	background: url(./images/github.png);
+	background-color: #d18a74;
+	background-size: contain;
+}
+
+.Home-main-icons .icon2 {
+	background: url(./images/linkdin.png);
+	background-color: #d18a74;
+	background-size: contain;
+}
+
+.Home-main-icons .icon3 {
+	background: url(./images/codepen.png);
+	background-color: #d18a74;
+	background-size: contain;
+}
+
+.Home-main-icons .icon4 {
+	background: url(./images/email.png);
+	background-color: #d18a74;
+	background-size: contain;
+}
+
 #firstName,
 #lastName {
 	font-size: 62px;
@@ -368,7 +408,7 @@ body {
 
 .About-main {
 	width: 100vw;
-	height: 24vh;
+	height: 20vh;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -542,9 +582,33 @@ body {
 }
 
 .Contact-footer-icon {
-	height: 8em;
-	width: 8em;
+	height: 6em;
+	width: 6em;
 	background-color: #d18a74;
 	border-radius: 50%;
 	margin: 0 0.5rem;
+}
+
+.Contact-footer-icons .footer-icon1 {
+	background: url(./images/github.png);
+	background-color: #d18a74;
+	background-size: contain;
+}
+
+.Contact-footer-icons .footer-icon2 {
+	background: url(./images/linkdin.png);
+	background-color: #d18a74;
+	background-size: contain;
+}
+
+.Contact-footer-icons .footer-icon3 {
+	background: url(./images/codepen.png);
+	background-color: #d18a74;
+	background-size: contain;
+}
+
+.Contact-footer-icons .footer-icon4 {
+	background: url(./images/email.png);
+	background-color: #d18a74;
+	background-size: contain;
 }
