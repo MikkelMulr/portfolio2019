@@ -50,11 +50,12 @@ body {
 .Menu-header-close {
 	cursor: pointer;
 	color: #d18a74;
-	transition: 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .Menu-header-close:hover {
 	color: #fff;
+	letter-spacing: -0.25rem;
 }
 
 .Menu-main {
@@ -71,11 +72,10 @@ body {
 	color: #fff;
 	font-size: 2rem;
 	padding: 1em 0;
-	transition: 0.2s ease;
 	cursor: pointer;
 	width: 100%;
 	text-align: center;
-	transition: 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	text-decoration: none;
 }
 
@@ -205,11 +205,14 @@ body {
 	font-size: 40px;
 	padding: 10px 20px;
 	cursor: pointer;
-	transition: 0.2s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	letter-spacing: 0.25rem;
 }
 
 .Home-header-menu:hover {
 	color: #fff;
+	transform: rotate(90deg);
+	letter-spacing: 0;
 }
 /* Home Main section */
 
@@ -497,7 +500,7 @@ body {
 
 .Contact-main {
 	width: 100vw;
-	height: 60vh;
+	height: 70vh;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
