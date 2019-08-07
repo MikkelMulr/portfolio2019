@@ -1,3 +1,8 @@
+@font-face {
+  font-family: marlett;
+  src: url(./fonts/Marlett.ttf);
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -206,7 +211,10 @@ body {
 	padding: 10px 20px;
 	cursor: pointer;
 	transition: all 0.25s ease-in-out;
-	letter-spacing: 0.25rem;
+  letter-spacing: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Home-header-menu:hover {
@@ -500,7 +508,7 @@ body {
 
 .Contact-main {
 	width: 100vw;
-	height: 70vh;
+	height: 80vh;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -571,7 +579,7 @@ body {
 
 /* Contact Footer */
 .Contact-footer {
-	height: 30vh;
+	height: 20vh;
 	width: 100%;
 }
 
