@@ -71,7 +71,6 @@ window.onload = function() {
 
 	// Close meny on menu item click, also add scroll function here
 	MENU_ITEMS.forEach((item) => {
-		console.log(item);
 		item.addEventListener('click', function() {
 			// scroll to selected element
 			document.getElementById(`${item.textContent.toLowerCase()}`).scrollIntoView({ behavior: 'smooth', block: 'end' });

@@ -481,18 +481,25 @@ body {
 /* Projects Main */
 .Projects-main {
 	width: 100vw;
-	height: 95vh;
+	height: 80vh;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	justify-content: flex-start;
+	padding-top: 5%;
 	margin-left: 4vw;
+	/* border: 2px solid green; */
 }
 
-.Projects-main-row {
+.Projects-main-container {
 	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	flex-flow: row;
+	flex-wrap: wrap;
+	height: auto;
 	width: 60vw;
-	height: 30vh;
+	/* border: 2px solid blue; */
 }
 
 .Projects-main-divider {
@@ -503,11 +510,12 @@ body {
 }
 
 .Project-item {
-	height: 100%;
-	width: 50%;
+	height: 30vh;
+	width: 20vw;
 	display: flex;
 	flex-flow: row;
 	align-items: center;
+	/* border: 1px solid red; */
 }
 
 .Project-preview {
@@ -702,7 +710,7 @@ body {
 .Contact-form {
 	display: flex;
 	flex-flow: column;
-	flex-wrap: wrap;
+	flex-wrap: no-wrap;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
@@ -842,6 +850,7 @@ body {
 	.Home-header {
 		padding: 5px 6px;
 		font-size: 16px;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
 	}
 
 	.Home-header-title {
@@ -902,19 +911,29 @@ body {
 	}
 
 	.Projects-main {
-		padding-top: 10vh;
+		padding-top: 5%;
 		margin-left: 0;
 	}
 
-	.Projects-main-row {
-		width: 100vw;
-		height: 25vh;
+	.Projects-main-container {
+		flex-flow: row;
+		flex-wrap: wrap;
+		height: auto;
+		width: 100%;
+	}
+
+	.Project-item {
+		height: 20vh;
+		width: 50vw;
+		display: flex;
+		flex-flow: row;
+		align-items: center;
 	}
 
 	.Projects-main-divider {
 		height: 0.8vh;
-		width: 80vw;
-		margin-top: 5vh;
+		width: 100vw;
+		margin-top: 0;
 	}
 
 	.Projects-preview-title {
@@ -947,7 +966,7 @@ body {
 	}
 
 	.About-main-text {
-		padding-top: 2rem;
+		padding-top: 1.5rem;
 		width: 94vw;
 		font-size: 14px;
 	}
@@ -958,16 +977,26 @@ body {
 	}
 
 	.Skills {
-		margin-top: 5vh;
+		margin-top: 4vh;
 		height: 60vh;
 		justify-content: space-evenly;
 	}
 
 	.Skills-backend,
 	.Skills-frontend {
-		width: 30%;
+		width: 40%;
 		font-size: 14px;
 		font-family: 'MajorMono';
+	}
+
+	.Skills-backend h2,
+	.Skills-frontend h2 {
+		padding-top: 0.5rem;
+	}
+
+	.Skills-backend ul li,
+	.Skills-frontend ul li {
+		padding: 0.25rem;
 	}
 
 	/* Contact Section */
