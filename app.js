@@ -2,6 +2,7 @@ window.onload = function() {
 	const firstLetters = document.querySelectorAll('#firstName .letter');
 	const lastLetters = document.querySelectorAll('#lastName .letter');
 
+	const MENU = document.querySelector('Menu');
 	const MENU_LAYER = document.querySelector('.Menu-underlayer');
 	const OPEN_MENU = document.querySelector('.Home-header-menu');
 	const CLOSE_MENU = document.querySelector('.Menu-header-close');
