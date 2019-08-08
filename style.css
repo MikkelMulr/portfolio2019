@@ -419,7 +419,7 @@ body {
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 32vh;
+	padding-top: 30%;
 	width: 100%;
 	height: 10vh;
 }
@@ -853,9 +853,12 @@ body {
 	.Home-main-icon {
 		height: 3rem;
 		width: 3rem;
-		background: #fff;
-		border-radius: 50%;
 		margin: 0 1rem;
+	}
+
+	.Home-main-scroll {
+		margin-top: 50%;
+		height: 10vh;
 	}
 
 	.Home-main-scroll-icon {
