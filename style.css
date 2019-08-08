@@ -509,7 +509,7 @@ body {
 	position: relative;
 }
 
-.Project-item {
+.Projects-main-container .Project-item {
 	height: 30vh;
 	width: 20vw;
 	display: flex;
