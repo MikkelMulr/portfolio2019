@@ -819,6 +819,21 @@ body {
 		width: 75vw;
 	}
 
+	.Menu-header {
+		height: 2vh;
+		padding: 0.8em 0.4em;
+		font-size: 2.4em;
+	}
+
+	.Menu-main-divider {
+		margin-bottom: 1rem;
+	}
+
+	.Menu-item {
+		font-size: 1.8rem;
+		padding: 0.4em 0;
+	}
+
 	/* Home Section */
 	.Home-main {
 		padding-top: 28vh;
