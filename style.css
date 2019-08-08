@@ -922,7 +922,7 @@ body {
 		width: 100%;
 	}
 
-	.Project-item {
+	.Projects-main-container .Project-item {
 		height: 20vh;
 		width: 50vw;
 		display: flex;
