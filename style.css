@@ -1,6 +1,6 @@
 @font-face {
-  font-family: marlett;
-  src: url(./fonts/Marlett.ttf);
+	font-family: marlett;
+	src: url(./fonts/Marlett.ttf);
 }
 
 * {
@@ -198,12 +198,32 @@ body {
 
 .Home-header-name {
 	color: #fff;
+	animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(-200%);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 
 .Home-header-title {
 	color: #d18a74;
 	font-size: 24px;
+	animation: slideInBottom 2.5s ease-in-out;
 }
+
+/* @keyframes slideIn {
+	from {
+		transform: translateX(-200%);
+	}
+	to {
+		transform: translateX(0);
+	}
+} */
 
 .Home-header-menu {
 	color: #d18a74;
@@ -211,10 +231,10 @@ body {
 	padding: 10px 20px;
 	cursor: pointer;
 	transition: all 0.25s ease-in-out;
-  letter-spacing: 0.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	letter-spacing: 0.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .Home-header-menu:hover {
@@ -234,12 +254,43 @@ body {
 	align-items: center;
 }
 
+.Home-main #firstName,
+.Home-main #lastName {
+	animation: fadeInTop 1.8s ease-in-out;
+	/* animation-delay: 1s; */
+}
+
+@keyframes fadeInTop {
+	from {
+		transform: translateY(-200%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 .Home-main-divider {
 	height: 2vh;
 	width: 60vw;
 	background-color: #d18a74;
 	position: relative;
 	margin-top: 3vh;
+	animation: loadBar 1s ease-in-out;
+}
+
+@keyframes loadBar {
+	from {
+		transform: scaleX(0);
+		opacity: 0;
+	}
+
+	to {
+		transform: scaleX(60vw);
+		opacity: 1;
+	}
 }
 
 .Home-main-icons {
@@ -258,28 +309,95 @@ body {
 	margin: 0 2rem;
 }
 
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+	opacity: 0;
+}
+
 .Home-main-icons .icon1 {
 	background: url(./images/github.png);
 	background-color: #d18a74;
 	background-size: contain;
+	transition: all 0.3s ease-in-out;
+	animation: slideInTop 1s forwards ease-in-out;
+	animation-delay: 0.25s;
 }
 
 .Home-main-icons .icon2 {
 	background: url(./images/linkdin.png);
 	background-color: #d18a74;
 	background-size: contain;
+	transition: all 0.3s ease-in-out;
+	animation: slideInLeft 1s forwards ease-in-out;
+	animation-delay: 0.5s;
 }
 
 .Home-main-icons .icon3 {
 	background: url(./images/codepen.png);
 	background-color: #d18a74;
 	background-size: contain;
+	transition: all 0.3s ease-in-out;
+	animation: slideInRight 1s forwards ease-in-out;
+	animation-delay: 0.75s;
 }
 
 .Home-main-icons .icon4 {
 	background: url(./images/email.png);
 	background-color: #d18a74;
 	background-size: contain;
+	transition: all 0.3s ease-in-out;
+	animation: slideInBottom 1s forwards ease-in-out;
+	animation-delay: 1s;
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInBottom {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInTop {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
 }
 
 #firstName,
@@ -343,14 +461,14 @@ body {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	margin-left: 4.8vw;
+	margin-left: 4vw;
 }
 
 .Projects-main-row {
 	display: flex;
 	flex-flow: row;
 	width: 60vw;
-	height: 20vh;
+	height: 30vh;
 }
 
 .Projects-main-divider {
@@ -369,10 +487,51 @@ body {
 }
 
 .Project-preview {
-	height: 85%;
-	width: 50%;
+	height: 100%;
+	width: 100%;
 	background-color: #fff;
-	border-radius: 2px;
+	overflow: hidden;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Project-preview-button {
+	width: 100%;
+	height: 100%;
+	background-color: #d18a7473;
+	transition: all 0.5s ease-in-out;
+	transform: translateY(500%);
+	font-family: 'Major Mono Display';
+}
+
+.Projects-preview-title {
+	color: #fff;
+	transition: all 1s ease-in-out;
+	transform: translateX(200%);
+}
+
+.Project-preview:hover .Project-preview-button {
+	transform: translateY(0);
+}
+
+.Project-preview:hover .Projects-preview-title {
+	transform: translateX(0);
+}
+
+.Projects-preview-bottom {
+	height: 60%;
+	width: 100%;
+	background-color: blue;
+	align-self: flex-end;
+	transition: all 1s ease-in-out;
+	transition-delay: 0.2s;
+	transform: translateY(500%);
+}
+
+.Project-preview:hover .Projects-preview-bottom {
+	transform: translateY(0);
 }
 
 /* About Section */
@@ -622,4 +781,12 @@ body {
 	background: url(./images/email.png);
 	background-color: #d18a74;
 	background-size: contain;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
 }
