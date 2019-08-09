@@ -311,39 +311,82 @@ body {
 }
 
 .Home-main-icons .icon1 {
-	background: url(./images/github.png);
-	background-color: #d18a74;
-	background-size: contain;
 	transition: all 0.3s ease-in-out;
 	animation: slideInTop 1s forwards ease-in-out;
 	animation-delay: 0.25s;
 }
 
-.Home-main-icons .icon2 {
-	background: url(./images/linkdin.png);
-	background-color: #d18a74;
+.Home-main-icons .icon1-top {
+	background: url(./images/github.png);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
 	background-size: contain;
+	position: absolute;
+}
+
+.Home-main-icons .icon2 {
 	transition: all 0.3s ease-in-out;
 	animation: slideInLeft 1s forwards ease-in-out;
 	animation-delay: 0.5s;
 }
 
-.Home-main-icons .icon3 {
-	background: url(./images/codepen.png);
-	background-color: #d18a74;
+.Home-main-icons .icon2-top {
+	background: url(./images/linkdin.png);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
 	background-size: contain;
+	position: absolute;
+}
+
+.Home-main-icons .icon3 {
 	transition: all 0.3s ease-in-out;
 	animation: slideInRight 1s forwards ease-in-out;
 	animation-delay: 0.75s;
 }
 
-.Home-main-icons .icon4 {
-	background: url(./images/email.png);
-	background-color: #d18a74;
+.Home-main-icons .icon3-top {
+	background: url(./images/codepen.png);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
 	background-size: contain;
+	position: absolute;
+}
+
+.Home-main-icons .icon4 {
 	transition: all 0.3s ease-in-out;
 	animation: slideInBottom 1s forwards ease-in-out;
 	animation-delay: 1s;
+}
+
+.Home-main-icons .icon4-top {
+	background: url(./images/email.png);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-size: contain;
+	position: absolute;
+}
+
+.Home-main-icons .icon4-bottom,
+.Home-main-icons .icon3-bottom,
+.Home-main-icons .icon2-bottom,
+.Home-main-icons .icon1-bottom {
+	background-color: #d18a74;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-size: contain;
+}
+
+.icon4:hover .icon4-bottom,
+.icon3:hover .icon3-bottom,
+.icon2:hover .icon2-bottom,
+.icon1:hover .icon1-bottom {
+	background: url(./images/icon-bg.gif);
+	background-position: center right;
 }
 
 @keyframes slideInLeft {
