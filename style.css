@@ -233,9 +233,12 @@ body {
 }
 
 .Home-header-menu:hover {
-	color: #fff;
-	transform: rotate(90deg);
-	letter-spacing: 0;
+	background: url(./images/icon-bg2.gif);
+	background-size: contain;
+	background-position: center;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: bold;
 }
 /* Home Main section */
 
@@ -252,6 +255,9 @@ body {
 .Home-main #firstName,
 .Home-main #lastName {
 	animation: fadeInTop 1.8s ease-in-out;
+}
+.Home-main #lastName {
+	padding-bottom: 10px;
 }
 
 @keyframes fadeInTop {
@@ -455,6 +461,28 @@ body {
 .accent-color {
 	color: #d18a74;
 }
+/* 
+.Secret-of-the-universe {
+	height: 1.6vh;
+	width: 1.6vw;
+	border: 1px solid red;
+	border-radius: 50%;
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	cursor: pointer;
+}
+
+.thiswasamistake {
+	width: 10vw;
+	height: 12vh;
+	background: url(https://media.giphy.com/media/ybIfrYyxTP3oWLWQN6/giphy.gif);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	right: 10%;
+} */
 
 .Home-main-scroll {
 	display: flex;
@@ -470,6 +498,7 @@ body {
 	height: auto;
 	width: 8%;
 	animation: bounce 1.25s ease-in-out infinite;
+	cursor: pointer;
 }
 
 @keyframes bounce {
@@ -585,6 +614,7 @@ body {
 	color: #fff;
 	transition: all 1s ease-in-out;
 	transform: translateX(200%);
+	padding: 10% 5%;
 }
 
 .Project-preview:hover .Project-preview-button {
@@ -596,9 +626,9 @@ body {
 }
 
 .Projects-preview-bottom {
-	height: 60%;
+	height: 40%;
 	width: 100%;
-	background-color: blue;
+	background-color: #d18a74;
 	align-self: flex-end;
 	transition: all 1s ease-in-out;
 	transition-delay: 0.2s;
@@ -607,6 +637,37 @@ body {
 
 .Project-preview:hover .Projects-preview-bottom {
 	transform: translateY(0);
+}
+
+.Project-item1 {
+	background: url(https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-position: center;
+	background-size: cover;
+}
+.Project-item2 {
+	background: url(https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-position: center;
+	background-size: cover;
+}
+.Project-item3 {
+	background: url(https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-position: center;
+	background-size: cover;
+}
+.Project-item4 {
+	background: url(https://images.pexels.com/photos/2096578/pexels-photo-2096578.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-position: center;
+	background-size: cover;
+}
+.Project-item5 {
+	background: url(https://images.pexels.com/photos/1150988/pexels-photo-1150988.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-position: center;
+	background-size: cover;
+}
+.Project-item6 {
+	background: url(https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-position: center;
+	background-size: cover;
 }
 
 /* About Section */

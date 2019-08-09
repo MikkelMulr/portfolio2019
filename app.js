@@ -2,11 +2,15 @@ window.onload = function() {
 	const firstLetters = document.querySelectorAll('#firstName .letter');
 	const lastLetters = document.querySelectorAll('#lastName .letter');
 
-	const MENU = document.querySelector('Menu');
+	const MENU = document.querySelector('.Menu');
+	const SOEU = document.querySelector('.Secret-of-the-universe');
 	const MENU_ITEMS = document.querySelectorAll('.Menu-item');
 	const MENU_LAYER = document.querySelector('.Menu-underlayer');
 	const OPEN_MENU = document.querySelector('.Home-header-menu');
 	const CLOSE_MENU = document.querySelector('.Menu-header-close');
+	const SCROLL_ICON = document.querySelector('.Home-main-scroll-icon');
+
+	let magicNum = 0;
 
 	// Generate random number based on name length
 	function getRand() {
@@ -77,4 +81,22 @@ window.onload = function() {
 			closeMenu();
 		});
 	});
+
+	SCROLL_ICON.addEventListener('click', function() {
+		document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'end' });
+	});
+
+	// SOEU.addEventListener('click', function() {
+	// 	if (magicNum === 7) {
+	// 		document.querySelector('.thiswasamistake').classList.toggle('hidden');
+	// 		magicNum = 0;
+	// 	} else {
+	// 		magicNum++;
+	// 	}
+	// });
+
+	// document.querySelector('.thiswasamistake').addEventListener('click', function() {
+	// 	document.querySelector('.thiswasamistake').classList.add('hidden');
+	// 	magicNum = 0;
+	// });
 };
