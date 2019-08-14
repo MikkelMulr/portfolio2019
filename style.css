@@ -949,7 +949,7 @@ body {
 
 	#firstName,
 	#lastName {
-		font-size: 36px;
+		font-size: 1.65rem;
 	}
 
 	.Home-main-divider {
@@ -979,12 +979,14 @@ body {
 
 	/* Projects Section */
 	.Projects-header {
-		height: 15vh;
+    height: 15vh;
+    width: 100vw;
 	}
 
 	.Projects-header-divider {
 		height: 3vh;
-		margin-top: 2vh;
+    margin-top: 2vh;
+    width: 60vw;
 	}
 
 	.Projects-header-title {
@@ -1002,7 +1004,7 @@ body {
 		flex-flow: row;
 		flex-wrap: wrap;
 		height: auto;
-		width: 100%;
+		width: 100vw;
 	}
 
 	.Projects-main-container .Project-item {
@@ -1020,7 +1022,7 @@ body {
 	}
 
 	.Projects-preview-title {
-		font-size: 14px;
+		font-size: 0.8rem;
 	}
 
 	/* About Section */
@@ -1051,7 +1053,7 @@ body {
 	.About-main-text {
 		padding-top: 1.5rem;
 		width: 94vw;
-		font-size: 14px;
+		font-size: 0.8rem;
 	}
 
 	.About-header-divider:last-of-type,
@@ -1068,13 +1070,14 @@ body {
 	.Skills-backend,
 	.Skills-frontend {
 		width: 40%;
-		font-size: 14px;
+		font-size: 0.8rem;
 		font-family: 'MajorMono';
 	}
 
 	.Skills-backend h2,
 	.Skills-frontend h2 {
-		padding-top: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
 	}
 
 	.Skills-backend ul li,
