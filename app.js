@@ -2,15 +2,11 @@ window.onload = function() {
 	const firstLetters = document.querySelectorAll('#firstName .letter');
 	const lastLetters = document.querySelectorAll('#lastName .letter');
 
-	const MENU = document.querySelector('.Menu');
-	const SOEU = document.querySelector('.Secret-of-the-universe');
 	const MENU_ITEMS = document.querySelectorAll('.Menu-item');
 	const MENU_LAYER = document.querySelector('.Menu-underlayer');
 	const OPEN_MENU = document.querySelector('.Home-header-menu');
 	const CLOSE_MENU = document.querySelector('.Menu-header-close');
 	const SCROLL_ICON = document.querySelector('.Home-main-scroll-icon');
-
-	let magicNum = 0;
 
 	// Generate random number based on name length
 	function getRand() {
