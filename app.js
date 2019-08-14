@@ -85,18 +85,4 @@ window.onload = function() {
 	SCROLL_ICON.addEventListener('click', function() {
 		document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'end' });
 	});
-
-	// SOEU.addEventListener('click', function() {
-	// 	if (magicNum === 7) {
-	// 		document.querySelector('.thiswasamistake').classList.toggle('hidden');
-	// 		magicNum = 0;
-	// 	} else {
-	// 		magicNum++;
-	// 	}
-	// });
-
-	// document.querySelector('.thiswasamistake').addEventListener('click', function() {
-	// 	document.querySelector('.thiswasamistake').classList.add('hidden');
-	// 	magicNum = 0;
-	// });
 };
