@@ -738,6 +738,11 @@ body {
 
 .Skills-backend ul li,
 .Skills-frontend ul li {
+	margin-top: 0.4rem;
+}
+
+.Skills-backend ul li,
+.Skills-frontend ul li {
 	list-style: none;
 	padding: 0.5rem;
 }
@@ -855,6 +860,10 @@ body {
 .Contact-footer {
 	height: 20vh;
 	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .Contact-footer-icons {
@@ -898,10 +907,750 @@ body {
 	background-size: contain;
 }
 
-/* 
+.Contact-footer-cr {
+	color: #fff;
+	text-align: center;
+	font-family: 'MajorMono';
+	font-size: 0.65rem;
+	width: 100%;
+	padding-left: 10%;
+	padding-bottom: 0.5rem;
+}
+
+.Contact-footer-cr span {
+	color: #d18a74;
+}
+
+/* TABLETS */
+@media (min-width: 1025px) and (max-width: 1280px) {
+	/* Menu Section */
+	.Menu {
+		width: 38vw;
+	}
+
+	.Menu-header {
+		font-size: 2.6em;
+	}
+
+	.Menu-item {
+		font-size: 2rem;
+		padding: 0.75em 0;
+	}
+
+	/* Header Section */
+	.Home-header {
+		padding: 5px 10px;
+		font-size: 1.4rem;
+	}
+
+	.Home-header-title {
+		font-size: 1.2rem;
+	}
+
+	.Home-header-menu {
+		font-size: 2.6rem;
+	}
+
+	/* Home Main Section */
+
+	#firstName,
+	#lastName {
+		font-size: 2.75rem;
+	}
+
+	.Home-main-divider {
+		height: 1.6vh;
+		width: 70vw;
+	}
+
+	.Home-main-icon {
+		height: 4rem;
+		width: 4rem;
+		margin: 0 1.2rem;
+	}
+
+	.Home-main-scroll {
+		padding-top: 20%;
+	}
+
+	.Home-main-scroll-icon {
+		width: 10%;
+	}
+
+	/* Projects Section */
+	.Projects-header {
+		height: 15vh;
+		width: 100vw;
+	}
+
+	.Projects-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 80vw;
+	}
+
+	.Projects-header-title {
+		width: 20vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 1rem;
+		text-align: center;
+	}
+
+	.Projects-main {
+		padding-top: 4%;
+		margin-left: 0;
+	}
+
+	.Projects-main-container {
+		flex-flow: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		height: auto;
+		width: 100vw;
+	}
+
+	.Projects-main-container .Project-item {
+		height: 24vh;
+		width: 45vw;
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+	}
+
+	.Projects-preview-title {
+		color: #fff;
+		transition: all 1s ease-in-out;
+		transform: translateX(200%);
+		padding: 5% 5%;
+		font-size: 1.2rem;
+	}
+
+	.Projects-preview-bottom {
+		height: 50%;
+		width: 100%;
+		background-color: #d18a74;
+		align-self: flex-end;
+		transition: all 1s ease-in-out;
+		transition-delay: 0.2s;
+		transform: translateY(500%);
+	}
+
+	.Projects-main-divider {
+		height: 0.8vh;
+		width: 100vw;
+		margin-top: 0;
+	}
+
+	/* About Section */
+
+	/* About Main */
+	.About-header {
+		height: 15vh;
+	}
+
+	.About-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 80vw;
+	}
+
+	.About-header-title {
+		width: 20vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 1rem;
+		text-align: center;
+	}
+
+	.About-main {
+		height: 25vh;
+		margin: 0 1vw;
+	}
+
+	.About-main-text {
+		padding-top: 1.5rem;
+		width: 94vw;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	.About-header-divider:last-of-type,
+	.About-header-title:last-of-type {
+		margin-top: 1vh;
+	}
+
+	.Skills {
+		margin-top: 4vh;
+		height: 60vh;
+		justify-content: space-evenly;
+	}
+
+	.Skills-backend,
+	.Skills-frontend {
+		width: 40%;
+		font-size: 1.15rem;
+		font-family: 'MajorMono';
+	}
+
+	.Skills-backend h2,
+	.Skills-frontend h2 {
+		padding: 0.5rem 0;
+		font-size: 1.25rem;
+	}
+
+	.Skills-backend ul li,
+	.Skills-frontend ul li {
+		padding: 0.25rem;
+	}
+
+	/* Contact Section */
+	.Contact-main {
+		margin-left: 0;
+	}
+	/* Contact Header */
+	.Contact-header {
+		height: 15vh;
+	}
+
+	.Contact-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 80vw;
+	}
+
+	.Contact-header-title {
+		width: 20vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 1rem;
+		text-align: center;
+	}
+
+	/* Contact Form */
+	.Contact-form {
+		width: 60%;
+	}
+
+	.Form-input,
+	.Form-input-text {
+		width: 100%;
+	}
+
+	.Form-btn {
+		width: 50%;
+	}
+
+	/* Contact Footer */
+	.Contact-footer-icons {
+		padding-left: 0;
+	}
+
+	.Contact-footer-icon {
+		height: 2.8em;
+		width: 2.8em;
+	}
+
+	.Contact-footer-cr {
+		color: #fff;
+		text-align: center;
+		font-family: 'MajorMono';
+		font-size: 0.65rem;
+		width: 100%;
+		padding-left: 5%;
+		padding-bottom: 0.5rem;
+	}
+
+	.Contact-footer-cr span {
+		color: #d18a74;
+	}
+}
+
+/* ********************************************************************** 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+********************************************************************** */
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.Menu {
+		width: 45vw;
+	}
+
+	.Menu-header {
+		font-size: 2.6em;
+	}
+
+	.Menu-item {
+		font-size: 2rem;
+		padding: 0.75em 0;
+	}
+
+	/* Header Section */
+	.Home-header {
+		padding: 5px 10px;
+		font-size: 1.4rem;
+	}
+
+	.Home-header-title {
+		font-size: 1.2rem;
+	}
+
+	.Home-header-menu {
+		font-size: 2.6rem;
+	}
+
+	/* Home Main Section */
+
+	#firstName,
+	#lastName {
+		font-size: 2.75rem;
+	}
+
+	.Home-main-divider {
+		height: 1.6vh;
+		width: 70vw;
+	}
+
+	.Home-main-icon {
+		height: 4rem;
+		width: 4rem;
+		margin: 0 1.2rem;
+	}
+
+	.Home-main-scroll {
+		padding-top: 30%;
+	}
+
+	.Home-main-scroll-icon {
+		width: 20%;
+	}
+
+	/* Projects Section */
+	.Projects-header {
+		height: 15vh;
+		width: 100vw;
+	}
+
+	.Projects-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 70vw;
+	}
+
+	.Projects-header-title {
+		width: 30vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 0.5rem;
+	}
+
+	.Projects-main {
+		padding-top: 4%;
+		margin-left: 0;
+	}
+
+	.Projects-main-container {
+		flex-flow: row;
+		flex-wrap: wrap;
+		height: auto;
+		width: 100vw;
+	}
+
+	.Projects-main-container .Project-item {
+		height: 20vh;
+		width: 50vw;
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+	}
+
+	.Projects-preview-title {
+		color: #fff;
+		transition: all 1s ease-in-out;
+		transform: translateX(200%);
+		padding: 10% 5%;
+		font-size: 1.2rem;
+	}
+
+	.Projects-preview-bottom {
+		height: 50%;
+		width: 100%;
+		background-color: #d18a74;
+		align-self: flex-end;
+		transition: all 1s ease-in-out;
+		transition-delay: 0.2s;
+		transform: translateY(500%);
+	}
+
+	.Projects-main-divider {
+		height: 0.8vh;
+		width: 100vw;
+		margin-top: 0;
+	}
+
+	/* About Section */
+
+	/* About Main */
+	.About-header {
+		height: 15vh;
+	}
+
+	.About-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 70vw;
+	}
+
+	.About-header-title {
+		width: 30vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 0.5rem;
+	}
+
+	.About-main {
+		height: 25vh;
+		margin: 0 1vw;
+	}
+
+	.About-main-text {
+		padding-top: 1.5rem;
+		width: 94vw;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	.About-header-divider:last-of-type,
+	.About-header-title:last-of-type {
+		margin-top: 1vh;
+	}
+
+	.Skills {
+		margin-top: 4vh;
+		height: 60vh;
+		justify-content: space-evenly;
+	}
+
+	.Skills-backend,
+	.Skills-frontend {
+		width: 40%;
+		font-size: 1.15rem;
+		font-family: 'MajorMono';
+	}
+
+	.Skills-backend h2,
+	.Skills-frontend h2 {
+		padding: 0.5rem 0;
+		font-size: 1.25rem;
+	}
+
+	.Skills-backend ul li,
+	.Skills-frontend ul li {
+		padding: 0.25rem;
+	}
+
+	/* Contact Section */
+	.Contact-main {
+		margin-left: 0;
+	}
+	/* Contact Header */
+	.Contact-header {
+		height: 15vh;
+	}
+
+	.Contact-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 70vw;
+	}
+
+	.Contact-header-title {
+		width: 30vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 0.5rem;
+	}
+
+	/* Contact Form */
+	.Contact-form {
+		width: 60%;
+	}
+
+	.Form-input,
+	.Form-input-text {
+		width: 100%;
+	}
+
+	.Form-btn {
+		width: 50%;
+	}
+
+	/* Contact Footer */
+	.Contact-footer-icons {
+		padding-left: 0;
+	}
+
+	.Contact-footer-icon {
+		height: 2.8em;
+		width: 2.8em;
+	}
+
+	.Contact-footer-cr {
+		color: #fff;
+		text-align: center;
+		font-family: 'MajorMono';
+		font-size: 0.65rem;
+		width: 100%;
+		padding-left: 5%;
+		padding-bottom: 0.5rem;
+	}
+
+	.Contact-footer-cr span {
+		color: #d18a74;
+	}
+}
+
+/* *********************************************************************
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+********************************************************************* */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	/* Menu Section */
+
+	.Menu {
+		width: 45vw;
+	}
+
+	.Menu-header {
+		font-size: 2.6em;
+	}
+
+	.Menu-item {
+		font-size: 2rem;
+		padding: 0.75em 0;
+	}
+
+	/* Header Section */
+	.Home-header {
+		padding: 5px 10px;
+		font-size: 1.4rem;
+	}
+
+	.Home-header-title {
+		font-size: 1.2rem;
+	}
+
+	.Home-header-menu {
+		font-size: 2.6rem;
+	}
+
+	/* Home Main Section */
+
+	#firstName,
+	#lastName {
+		font-size: 2.75rem;
+	}
+
+	.Home-main-divider {
+		height: 1.6vh;
+		width: 70vw;
+	}
+
+	.Home-main-icon {
+		height: 4rem;
+		width: 4rem;
+		margin: 0 1.2rem;
+	}
+
+	.Home-main-scroll {
+		padding-top: 30%;
+	}
+
+	.Home-main-scroll-icon {
+		width: 20%;
+	}
+
+	/* Projects Section */
+	.Projects-header {
+		height: 15vh;
+		width: 100vw;
+	}
+
+	.Projects-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 70vw;
+	}
+
+	.Projects-header-title {
+		width: 30vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 0.5rem;
+	}
+
+	.Projects-main {
+		padding-top: 4%;
+		margin-left: 0;
+	}
+
+	.Projects-main-container {
+		flex-flow: row;
+		flex-wrap: wrap;
+		height: auto;
+		width: 100vw;
+	}
+
+	.Projects-main-container .Project-item {
+		height: 20vh;
+		width: 50vw;
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+	}
+
+	.Projects-preview-title {
+		color: #fff;
+		transition: all 1s ease-in-out;
+		transform: translateX(200%);
+		padding: 10% 5%;
+		font-size: 1.2rem;
+	}
+
+	.Projects-preview-bottom {
+		height: 50%;
+		width: 100%;
+		background-color: #d18a74;
+		align-self: flex-end;
+		transition: all 1s ease-in-out;
+		transition-delay: 0.2s;
+		transform: translateY(500%);
+	}
+
+	.Projects-main-divider {
+		height: 0.8vh;
+		width: 100vw;
+		margin-top: 0;
+	}
+
+	/* About Section */
+
+	/* About Main */
+	.About-header {
+		height: 15vh;
+	}
+
+	.About-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 70vw;
+	}
+
+	.About-header-title {
+		width: 30vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 0.5rem;
+	}
+
+	.About-main {
+		height: 25vh;
+		margin: 0 1vw;
+	}
+
+	.About-main-text {
+		padding-top: 1.5rem;
+		width: 94vw;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	.About-header-divider:last-of-type,
+	.About-header-title:last-of-type {
+		margin-top: 1vh;
+	}
+
+	.Skills {
+		margin-top: 4vh;
+		height: 60vh;
+		justify-content: space-evenly;
+	}
+
+	.Skills-backend,
+	.Skills-frontend {
+		width: 40%;
+		font-size: 1.15rem;
+		font-family: 'MajorMono';
+	}
+
+	.Skills-backend h2,
+	.Skills-frontend h2 {
+		padding: 0.5rem 0;
+		font-size: 1.25rem;
+	}
+
+	.Skills-backend ul li,
+	.Skills-frontend ul li {
+		padding: 0.25rem;
+	}
+
+	/* Contact Section */
+	.Contact-main {
+		margin-left: 0;
+	}
+	/* Contact Header */
+	.Contact-header {
+		height: 15vh;
+	}
+
+	.Contact-header-divider {
+		height: 2.8vh;
+		margin-top: 2vh;
+		width: 70vw;
+	}
+
+	.Contact-header-title {
+		width: 30vw;
+		font-size: 1.75rem;
+		padding: 0.2rem 0.5rem;
+	}
+
+	/* Contact Form */
+	.Contact-form {
+		width: 60%;
+	}
+
+	.Form-input,
+	.Form-input-text {
+		width: 100%;
+	}
+
+	.Form-btn {
+		width: 50%;
+	}
+
+	/* Contact Footer */
+	.Contact-footer-icons {
+		padding-left: 0;
+	}
+
+	.Contact-footer-icon {
+		height: 2.8em;
+		width: 2.8em;
+	}
+
+	.Contact-footer-cr {
+		color: #fff;
+		text-align: center;
+		font-family: 'MajorMono';
+		font-size: 0.65rem;
+		width: 100%;
+		padding-left: 5%;
+		padding-bottom: 0.5rem;
+	}
+
+	.Contact-footer-cr span {
+		color: #d18a74;
+	}
+}
+
+/* ********************************************************************
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
-*/
+******************************************************************** */
 
 @media (min-width: 320px) and (max-width: 480px) {
 	/* Menu Section */
@@ -949,7 +1698,7 @@ body {
 
 	#firstName,
 	#lastName {
-		font-size: 1.65rem;
+		font-size: 1.8rem;
 	}
 
 	.Home-main-divider {
@@ -969,7 +1718,7 @@ body {
 	}
 
 	.Home-main-scroll {
-		/* padding: 20%; */
+		padding-top: 20%;
 		height: 10vh;
 	}
 
@@ -979,14 +1728,14 @@ body {
 
 	/* Projects Section */
 	.Projects-header {
-    height: 15vh;
-    width: 100vw;
+		height: 15vh;
+		width: 100vw;
 	}
 
 	.Projects-header-divider {
 		height: 3vh;
-    margin-top: 2vh;
-    width: 60vw;
+		margin-top: 2vh;
+		width: 60vw;
 	}
 
 	.Projects-header-title {
@@ -1076,8 +1825,8 @@ body {
 
 	.Skills-backend h2,
 	.Skills-frontend h2 {
-    padding-top: 0.5rem;
-    font-size: 1rem;
+		padding-top: 0.5rem;
+		font-size: 1rem;
 	}
 
 	.Skills-backend ul li,
