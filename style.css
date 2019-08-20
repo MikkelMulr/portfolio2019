@@ -253,22 +253,36 @@ body {
 	align-items: center;
 }
 
-.Home-main #firstName,
-.Home-main #lastName {
-	animation: fadeInTop 1.8s ease-in-out;
-}
-.Home-main #lastName {
-	padding-bottom: 10px;
+.Home-main #firstName {
+	animation: fadeInRight 1.8s ease-in-out;
 }
 
-@keyframes fadeInTop {
+.Home-main #lastName {
+	padding-bottom: 10px;
+	animation: fadeInLeft 1.8s ease-in-out;
+	animation-delay: 0.2s;
+}
+
+@keyframes fadeInRight {
 	from {
-		transform: translateY(-200%);
+		transform: translateX(100%);
 		opacity: 0;
 	}
 
 	to {
-		transform: translateY(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
 		opacity: 1;
 	}
 }
@@ -279,7 +293,7 @@ body {
 	background-color: #d18a74;
 	position: relative;
 	margin-top: 3vh;
-	animation: loadBar 1s ease-in-out;
+	animation: loadBar 2.25s ease-in-out;
 }
 
 @keyframes loadBar {
@@ -471,6 +485,7 @@ body {
 	padding-top: 10%;
 	width: 100%;
 	height: 10vh;
+	animation: slideInBottom 1.2s ease-in-out;
 }
 
 .Home-main-scroll-icon {
@@ -619,32 +634,32 @@ body {
 }
 
 .Project-item1 {
-	background: url(https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background: url(./images/proj1.jpeg);
 	background-position: center;
 	background-size: cover;
 }
 .Project-item2 {
-	background: url(https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background: url(./images/proj2.jpeg);
 	background-position: center;
 	background-size: cover;
 }
 .Project-item3 {
-	background: url(https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background: url(./images/proj3.jpeg);
 	background-position: center;
 	background-size: cover;
 }
 .Project-item4 {
-	background: url(https://images.pexels.com/photos/2096578/pexels-photo-2096578.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background: url(./images/proj4.jpeg);
 	background-position: center;
 	background-size: cover;
 }
 .Project-item5 {
-	background: url(https://images.pexels.com/photos/1150988/pexels-photo-1150988.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background: url(./images/proj5.jpeg);
 	background-position: center;
 	background-size: cover;
 }
 .Project-item6 {
-	background: url(https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background: url(./images/proj6.jpeg);
 	background-position: center;
 	background-size: cover;
 }

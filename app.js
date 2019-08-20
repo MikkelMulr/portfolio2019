@@ -69,7 +69,7 @@ window.onload = function() {
 		closeMenu();
 	});
 
-	// Close meny on menu item click, also add scroll function here
+	// Close menu on menu item click, also add scroll function here
 	MENU_ITEMS.forEach((item) => {
 		item.addEventListener('click', function() {
 			// scroll to selected element
