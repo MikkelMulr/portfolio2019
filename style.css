@@ -554,7 +554,6 @@ body {
 	justify-content: flex-start;
 	padding-top: 5%;
 	margin-left: 4vw;
-	/* border: 2px solid green; */
 }
 
 .Projects-main-container {
@@ -565,7 +564,6 @@ body {
 	flex-wrap: wrap;
 	height: auto;
 	width: 60vw;
-	/* border: 2px solid blue; */
 }
 
 .Projects-main-divider {
@@ -581,12 +579,11 @@ body {
 	display: flex;
 	flex-flow: row;
 	align-items: center;
-	/* border: 1px solid red; */
 }
 
 .Project-preview {
-	height: 100%;
-	width: 100%;
+	height: 90%;
+	width: 90%;
 	background-color: #fff;
 	overflow: hidden;
 	display: flex;
@@ -598,7 +595,8 @@ body {
 .Project-preview-button {
 	width: 100%;
 	height: 100%;
-	background-color: #d18a7473;
+	/* background-color: #a56a58ab; */
+	background: linear-gradient(to bottom, #30303096 0%, #a5a5a563 100%);
 	transition: all 0.5s ease-in-out;
 	transform: translateY(500%);
 	font-family: 'MajorMono';
@@ -620,32 +618,72 @@ body {
 }
 
 .Projects-preview-bottom {
-	height: 40%;
+	height: 50%;
 	width: 100%;
-	background-color: #d18a74;
+	/* padding: 1rem 0; */
+	background-color: #303030c7;
 	align-self: flex-end;
 	transition: all 1s ease-in-out;
 	transition-delay: 0.2s;
 	transform: translateY(500%);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .Project-preview:hover .Projects-preview-bottom {
 	transform: translateY(0);
 }
 
+.live-prev,
+.code-prev {
+	width: 50%;
+	height: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #25ca6fc2; */
+	/* border-radius: 6px; */
+	font-size: 1.2rem;
+}
+
+.sml-text {
+	font-size: 0.8rem;
+}
+
+.sml-text span {
+	font-size: 1rem;
+}
+
+.Project-preview a {
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.live-prev:hover,
+.code-prev:hover {
+	background-color: #24232365;
+	cursor: pointer;
+	color: #d18a74;
+}
+
 .Project-item1 {
-	background: url(./images/proj1.jpeg);
-	background-position: center;
+	background: url(./images/proj1-b.PNG);
+	background-position: top center;
 	background-size: cover;
 }
 .Project-item2 {
-	background: url(./images/proj2.jpeg);
+	background: url(./images/proj2-b.PNG);
 	background-position: center;
 	background-size: cover;
 }
 .Project-item3 {
-	background: url(./images/proj3.jpeg);
-	background-position: center;
+	background: url(./images/Web\ 1920\ –\ 1.png);
+	background-position: top center;
 	background-size: cover;
 }
 .Project-item4 {
